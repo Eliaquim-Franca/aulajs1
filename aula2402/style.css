@@ -1,0 +1,29 @@
+.container{
+	width: 40%;
+	padding: 30px;
+	margin: 200px 40px 90px 350px;
+	height: 90px;
+	text-align: center;
+	background-color: #00f8ff;
+    border-radius: 33px; 
+
+}
+.botao{
+	color: white;
+	margin: 70px;
+	padding: 70px;
+}
+
+#title{
+	margin: 5px;
+	font-style: italic;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+.btn{
+	background-color: #68d482a1;
+	margin:35px;
+	margin-inline-end: auto;
+	border-radius: 6px;
+}

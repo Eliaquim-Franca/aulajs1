@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Validador de CPF - SE</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		<div id="title"><a >
+			Validador de CPF
+			</a>
+		</div>
+		<div>
+			<label id="txtcpf" for="campoCPF">CPF:</label>
+			<input type="text" name="txtCpf" id="campCpf">
+		</div>
+		
+		<button class="btn" onclick="verificarCpf()">Verifica</button>
+	</div>
+
+
+		<script>
+			function verificarCpf(){
+				//entrada de dados
+				var cpf = document.getElementById("campCpf").value
+				var digito = cpf.charAt(10)
+
+
+				if(digito == 0){
+					alert(`O CPF: ${cpf} foi emitido em Rio Grande do Sul`)
+				}
+				if(digito == 1){
+					alert(`O CPF: ${cpf} foi emitido em Distrito Federal ou Goiás ou Mato Grosso ou Mato Grosso do Sul ou Tocantins`)
+				}
+				if(digito == 2){
+					alert(`O CPF: ${cpf} foi emitido em Amazonas ou Pará ou Roraima ou Amapá ou Acre ou Rondônia`)
+				}
+				if(digito == 3){
+					alert(`O CPF: ${cpf} foi emitido em Ceará, Maranhão e Piauí`)
+				}
+				if(digito == 4){
+					alert(`O CPF: ${cpf} foi emitido em Paraíba ou Pernambuco ou Alagoas ou Rio Grande do Norte`)
+				}
+				if(digito == 5){
+					alert(`O CPF: ${cpf} foi emitido em Bahia ou Sergipe`)
+				}
+				if(digito == 6){
+					alert(`O CPF: ${cpf} foi emitido em Minas Gerais`)
+				}
+				if(digito == 7){
+					alert(`O CPF: ${cpf} foi emitido em Rio de Janeiro ou Espirito Santo`)
+				}
+				if(digito == 8){
+					alert(`O CPF: ${cpf} foi emitido em São Paulo`)
+				}
+				if(digito == 9){
+					alert(`O CPF: ${cpf} foi emitido em Paraná ou Santa Catarina`)
+				}
+
+
+				//saida de dados
+				//alert(digito)
+			}
+		</script>
+
+</body>
+</html>
